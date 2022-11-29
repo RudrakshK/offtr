@@ -18,12 +18,9 @@ def gfg():
        # last_name = request.form.get("lname")
        
        print(projectid)
-
-       prj['ID'] = projectid
-       
+       prj['ID'] = str(projectid)
        print(prj)
-
-       return "Your Project is "+ projectid
+       return "Your Project is "+ prj['ID']
     return render_template("student.html")
 
 if __name__=='__main__':
